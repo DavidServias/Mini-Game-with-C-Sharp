@@ -115,6 +115,7 @@ void FreezePlayer()
 }
 
 
+// Returns true if food was consumed. Also updates the food string.
 bool FoodWasConsumed() {
     bool result = false;
     if (playerY == foodY)
@@ -148,7 +149,7 @@ bool FoodWasConsumed() {
     return result;
 }
 
-// Checks if food is gone
+// Checks if all the strings in foods array are empty strings, which would mean that all of the FoodIsGone
 bool FoodIsGone() 
 {
     bool isGone = true;
